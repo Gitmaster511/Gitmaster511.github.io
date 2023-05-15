@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
+      rel="stylesheet"
+    />
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Alaap | portfolio</title>
+  </head>
+  <body class="text-white bg-charcoal-100 font-poppins">
+    <!-- Navigation menu -->
+
+    <nav
+      class="fixed z-10 flex items-center justify-end w-full bg-charcoal-100/50 backdrop-blur-md sm:justify-center font-roboto"
+    >
+      <ul class="hidden py-5 sm:flex gap-14">
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#projects">projects</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+      </ul>
+      <button id="open-menu" class="py-5 pr-5">
+        <img src="/img/icons/menu.svg" alt="" class="sm:hidden w-9" />
+      </button>
+      <div
+        id="menu"
+        class="flex translate-x-full right-0 top-0 sm:hidden fixed h-screen w-[65vw] bg-charcoal-100/50 backdrop-blur-md justify-center pt-24 rounded-l-lg duration-300 ease-in-out"
+      >
+        <button id="close-menu" class="absolute top-5 right-5">
+          <img src="/img/icons/close.svg" alt="" class="w-9" />
+        </button>
+        <ul class="flex flex-col items-center py-5 gap-14">
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#projects">projects</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero section -->
+
+      <section id="home" class="relative h-screen overflow-hidden">
+        <img
+          src="img/hero.jpg"
+          alt=""
+          class="absolute top-0 left-0 object-cover w-screen h-screen pointer-events-none -z-20"
+        />
+        <div
+          class="absolute flex flex-col items-start gap-2 top-72 sm:top-96 left-5 sm:left-20 lg:left-40 xl:left-56 animate-fadeInUp"
+        >
+          <h1 class="-mb-1 text-3xl font-semibold sm:text-6xl md:text-8xl">
+            Hi, I'm Alaap
+          </h1>
+          <h2
+            class="font-roboto text-neutral-400 text-md sm:text-lg md:text-xl"
+          >
+            FullStack Developer
+          </h2>
+          <a href="#projects">
+            <button class="px-4 py-1 rounded-lg bg-pine sm:py-2">
+              check out my work
+            </button>
+          </a>
+        </div>
+        <div
+          class="absolute top-0 left-0 w-screen h-screen pointer-events-none bg-gradient-to-t from-charcoal-100 to-transparent backdrop-blur-sm -z-10"
+        />
+      </section>
+      <!-- About section -->
+
+      <section
+        id="about"
+        class="flex flex-col gap-10 justify-center items-center max-w-[90rem] mx-auto py-28 md:py-56"
+      >
+        <h1
+          class="text-4xl font-semibold underline sm:text-6xl md:text-8xl decoration-pine"
+        >
+          App Development
+        </h1>
+        <div
+          class="flex flex-col gap-5 border-[3px] border-neutral-400 p-5 w-11/12 md:w-2/3"
+        >
+          <p class="font-roboto">
+            I have been developing apps for the past 3 years. I am experienced in developing apps for Android, IOS and React Native. I have worked on many projects, including large and complex ones. 
+          </p>
+          <div
+            class="grid grid-cols-2 pt-6 border-t-2 sm:grid-cols-3 md:grid-cols-5 gap-y-5 border-neutral-400"
+          >
+            <div class="flex flex-col items-center gap-4">
+              <img
+                src="/img/icons/swift.svg"
+                alt="Machine learning"
+                class="w-16"
+              />
+              <p
+                class="px-2 py-1 text-xs text-center rounded-lg sm:text-sm font-roboto bg-white/10"
+              >
+                Swift
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+              <img src="/img/icons/cup.and.saucer.fill.svg" alt="Python" class="w-16" />
+              <p
+                class="px-2 py-1 text-xs text-center rounded-lg sm:text-sm font-roboto bg-white/10"
+              >
+                Java
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+              <img
+                src="/img/icons/atom.svg"
+                alt="Data visualization"
+                class="w-16"
+              />
+              <p
+                class="px-2 py-1 text-xs text-center rounded-lg sm:text-sm font-roboto bg-white/10"
+              >
+                React Native
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+              <img src="/img/icons/flame.svg" alt="Git" class="w-16" />
+              <p
+                class="px-2 py-1 text-xs text-center rounded-lg sm:text-sm font-roboto bg-white/10"
+              >
+                Firebase
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+              <img
+                src="/img/icons/git.svg"
+                alt="Data structures"
+                class="w-16"
+              />
+              <p
+                class="px-2 py-1 text-xs text-center rounded-lg sm:text-sm font-roboto bg-white/10"
+              >
+                Git
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects section -->
+
+      <section
+        id="projects"
+        class="max-w-[90rem] mx-auto flex flex-col gap-10 py-28 md:py-56"
+      >
+        <div class="flex flex-col items-center gap-4 md:items-start">
+          <h1
+            class="text-4xl font-semibold underline sm:text-6xl md:text-8xl decoration-pine"
+          >
+            Projects
+          </h1>
+          <h2 class="text-md md:text-lg font-roboto">
+            Here's some of my work:
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-1 px-5 md:grid-cols-2 xl:grid-cols-3 gap-y-12 md:gap-x-5 xl:gap-x-8 font-roboto md:px-0"
+        >
+          <article
+            class="relative flex flex-col items-start gap-8 px-4 pt-4 pb-10 transition duration-150 bg-white border-b-8 rounded-lg text-charcoal-200 border-pine hover:scale-105"
+          >
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl text-charcoal-200/50"
+                >Gitmaster511/</span
+              >
+              <!-- Project title  -->
+              <span class="text-xl sm:text-2xl text-charcoal-200"
+                >Zardon Vision</span
+              >
+            </div>
+            <!-- Project link -->
+            <a href="https://github.com/Gitmaster511/Zardon-Vision" target="_blank">
+              <button
+                class="border-[3px] border-charcoal-200 rounded-lg py-1 px-3"
+              >
+                view source
+              </button>
+            </a>
+            <div
+              class="absolute w-16 p-3 rounded-lg top-4 right-4 bg-charcoal-200"
+            >
+              <!-- Project icon -->
+              <img
+                src="/img/icons/eyeglasses.svg"
+                alt="Perceptron"
+                class="w-full"
+              />
+            </div>
+            <img
+              src="/img/icons/trash.slash.svg"
+              alt=""
+              class="absolute w-5 bottom-4 right-4"
+            />
+          </article>
+          <article
+            class="relative flex flex-col items-start gap-8 px-4 pt-4 pb-10 transition duration-150 bg-white border-b-8 rounded-lg text-charcoal-200 border-pine hover:scale-105"
+          >
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl text-charcoal-200/50"
+                >Gitmaster511/</span
+              >
+              <!-- Project title -->
+              <span class="text-xl sm:text-2xl text-charcoal-200"
+                >SustainableSwap</span
+              >
+            </div>
+            <!-- Project link -->
+            <a
+              href="https://github.com/Gitmaster511/SustainableSwap"
+              target="_blank"
+            >
+              <button
+                class="border-[3px] border-charcoal-200 rounded-lg py-1 px-3"
+              >
+                view source
+              </button>
+            </a>
+            <div
+              class="absolute w-16 p-3 rounded-lg top-4 right-4 bg-charcoal-200"
+            >
+              <!-- Project icon -->
+              <img
+                src="/img/icons/trash.slash.svg"
+                alt="Perceptron"
+                class="w-full"
+              />
+            </div>
+            <img
+              src="/img/icons/ghlogo.svg"
+              alt=""
+              class="absolute w-5 bottom-4 right-4"
+            />
+          </article>
+          <article
+            class="relative flex flex-col items-start gap-8 px-4 pt-4 pb-10 transition duration-150 bg-white border-b-8 rounded-lg text-charcoal-200 border-pine hover:scale-105"
+          >
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl text-charcoal-200/50"
+                >Gitmaster511/</span
+              >
+              <!-- Project title -->
+              <span class="text-xl sm:text-2xl text-charcoal-200"
+                >EcoSort</span
+              >
+            </div>
+            <!-- Project link -->
+            <a
+              href="https://github.com/Gitmaster511/EcoSort"
+              target="_blank"
+            >
+              <button
+                class="border-[3px] border-charcoal-200 rounded-lg py-1 px-3"
+              >
+                view source
+              </button>
+            </a>
+            <div
+              class="absolute w-16 p-3 rounded-lg top-4 right-4 bg-charcoal-200"
+            >
+              <!-- Project icon -->
+              <img
+                src="/img/icons/globe.svg"
+                alt="Perceptron"
+                class="w-full"
+              />
+            </div>
+            <img
+              src="/img/icons/ghlogo.svg"
+              alt=""
+              class="absolute w-5 bottom-4 right-4"
+            />
+          </article>
+          <article
+            class="relative flex flex-col items-start gap-8 px-4 pt-4 pb-10 transition duration-150 bg-white border-b-8 rounded-lg text-charcoal-200 border-pine hover:scale-105"
+          >
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl text-charcoal-200/50"
+                >Gitmaster511/</span
+              >
+              <!-- Project title -->
+              <span class="text-xl sm:text-2xl text-charcoal-200">Scouter App 2023</span>
+            </div>
+            <!-- Project link -->
+            <a href="https://github.com/Gitmaster511/Scouter-App-2023" target="_blank">
+              <button
+                class="border-[3px] border-charcoal-200 rounded-lg py-1 px-3"
+              >
+                view source
+              </button>
+            </a>
+            <div
+              class="absolute w-16 p-3 rounded-lg top-4 right-4 bg-charcoal-200"
+            >
+              <!-- Project icon -->
+              <img
+                src="/img/icons/note.text.svg"
+                alt="Perceptron"
+                class="w-full"
+              />
+            </div>
+            <img
+              src="/img/icons/ghlogo.svg"
+              alt=""
+              class="absolute w-5 bottom-4 right-4"
+            />
+          </article>
+          <article
+            class="relative flex flex-col items-start gap-8 px-4 pt-4 pb-10 transition duration-150 bg-white border-b-8 rounded-lg text-charcoal-200 border-pine hover:scale-105"
+          >
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl text-charcoal-200/50"
+                >Gitmaster511/</span
+              >
+              <!-- Project title -->
+              <span class="text-xl sm:text-2xl text-charcoal-200"
+                >AI Chatbot</span
+              >
+            </div>
+            <!-- Project link -->
+            <a
+              href="https://github.com/Gitmaster511/Ai-Chatbot"
+              target="_blank"
+            >
+              <button
+                class="border-[3px] border-charcoal-200 rounded-lg py-1 px-3"
+              >
+                view source
+              </button>
+            </a>
+            <div
+              class="absolute w-16 p-3 rounded-lg top-4 right-4 bg-charcoal-200"
+            >
+              <!-- Project icon -->
+              <img
+                src="/img/icons/message.fill.svg"
+                alt="Perceptron"
+                class="w-full"
+              />
+            </div>
+            <img
+              src="/img/icons/ghlogo.svg"
+              alt=""
+              class="absolute w-5 bottom-4 right-4"
+            />
+          </article>
+          <article
+            class="relative flex flex-col items-start gap-8 px-4 pt-4 pb-10 transition duration-150 bg-white border-b-8 rounded-lg text-charcoal-200 border-pine hover:scale-105"
+          >
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl text-charcoal-200/50"
+                >Gitmaster511/</span
+              >
+              <!-- Project title -->
+              <span class="text-xl sm:text-2xl text-charcoal-200">Portfolio</span>
+            </div>
+            <!-- Project link -->
+            <a href="https://github.com/Gitmaster511/Gitmaster511.github.io" target="_blank">
+              <button
+                class="border-[3px] border-charcoal-200 rounded-lg py-1 px-3"
+              >
+                view source
+              </button>
+            </a>
+            <div
+              class="absolute w-16 p-3 rounded-lg top-4 right-4 bg-charcoal-200"
+            >
+              <!-- Project icon -->
+              <img src="/img/icons/person.crop.circle.svg" alt="Perceptron" class="w-full" />
+            </div>
+            <img
+              src="/img/icons/ghlogo.svg"
+              alt=""
+              class="absolute w-5 bottom-4 right-4"
+            />
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+
+      <footer id="contact" class="py-20 bg-charcoal-300">
+        <div class="max-w-[90rem] mx-auto flex flex-col items-center gap-10">
+          <h1
+            class="text-4xl font-semibold underline sm:text-6xl md:text-8xl decoration-pine"
+          >
+            Contact
+          </h1>
+          <div class="flex flex-col items-center gap-8 sm:flex-row">
+            <a
+              href="https://www.github.com/Gitmaster511"
+              target="_blank"
+              class="flex items-center gap-2"
+            >
+              <img
+                src="/img/icons/github.svg"
+                alt=""
+                class="w-6 sm:w-8"
+              /><span class="font-roboto">Gitmaster511</span>
+            </a>
+            <!-- Add email here -->
+            <a href="mailto:email@gmail.com" class="flex items-center gap-2">
+              <img src="/img/icons/email.svg" alt="" class="w-6 sm:w-8" />
+              <!-- Add email here -->
+              <span class="font-roboto">email@gmail.com</span>
+            </a>
+            <a href="https://discord.com/users/1071226400545189989" class="flex items-center gap-2">
+              <img src="img/icons/discord.svg" alt="" class="w-6 sm:w-8"><span class="font-roboto">Flyer57#1108</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
