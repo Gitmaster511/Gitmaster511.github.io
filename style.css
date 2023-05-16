@@ -589,6 +589,10 @@ video {
   display: flex;
 }
 
+.padding {
+  padding-bottom: 30px;
+}
+
 .grid {
   display: grid;
 }
@@ -624,6 +628,23 @@ video {
 .w-16 {
   width: 4rem;
 }
+.w-15 {
+  width: 3.5rem;
+  margin-bottom: 10px;
+}
+.w-17 {
+  width: 3.5rem;
+  margin-bottom:5px;
+  padding-bottom: 5px;
+  margin-top:-5px;
+
+}
+.w-18 {
+  width: 3rem;
+  margin-bottom: 5px;
+  padding-top: -20px;
+}
+
 
 .w-5 {
   width: 1.25rem;
